@@ -39,7 +39,7 @@ const Contact = () => {
       </Typography>
 
       <div className="contact-form bg-[transparent]">
-        <div
+        <form
           className="flex flex-row flex-wrap bg-[transparent]"
           ref={refForm}
           onSubmit={sendEmail}
@@ -79,7 +79,7 @@ const Contact = () => {
               <Typography variant="body">SEND</Typography>
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );
