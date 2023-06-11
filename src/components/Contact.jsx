@@ -6,7 +6,7 @@ const Contact = () => {
   const refForm = useRef();
 
   const sendEmail = (e) => {
-    setSend(true);
+    e.preventDefault();
 
     emailjs
       .sendForm(
@@ -19,15 +19,11 @@ const Contact = () => {
         () => {
           alert("Message Successfully Sent!");
           window.location.reload(false);
-          setSend(false);
         },
         () => {
           alert("Failed To Send The Message, Please Try Again");
-          setSend(false);
         }
       );
-
-    e.preventDefault();
   };
 
   return (
@@ -47,7 +43,7 @@ const Contact = () => {
           <input
             className="md:w-full lg:w-[49%] my-[10px] mr-[5px] text-[white] h-[45px] p-[10px] border-2 border-solid rounded-lg"
             type="text"
-            name="from_name"
+            name="name"
             placeholder="Name"
             required
           />
@@ -56,13 +52,6 @@ const Contact = () => {
             type="email"
             name="email"
             placeholder="Email"
-            required
-          />
-          <input
-            className="md:w-full lg:w-[99%] my-[10px] mr-[5px] h-[45px] p-[10px] border-2 border-solid rounded-lg"
-            type="text"
-            name="subject"
-            placeholder="Subject"
             required
           />
           <div className="flex flex-col flex-nowrap w-full bg-[transparent]">
