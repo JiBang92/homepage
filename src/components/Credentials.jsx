@@ -4,7 +4,7 @@ const Credentials = () => {
   return (
     <div className="flex flex-col justify-end items-end p-[25px] z-[999] bg-transparentWhite rounded-3xl">
       <Typography variant="bodyTitle">Credentials</Typography>
-      <Typography variant="body" sx={{ textAlign: "right" }}>
+      <Typography variant="body" sx={{ textAlign: "right", margin: "10px 0" }}>
         Certified through MIT xPRO Professional Certificate in Coding:
         <br /> Full Stack Development with MERN
       </Typography>
@@ -14,7 +14,7 @@ const Credentials = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <button className="animate-bounce border-2 border-white rounded my-[15px] p-[5px]">
+        <button className="border-2 border-white rounded my-[15px] p-[5px]">
           <Typography variant="body">View Certificate</Typography>
         </button>
       </a>

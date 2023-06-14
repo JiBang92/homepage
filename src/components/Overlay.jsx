@@ -27,7 +27,9 @@ const Overlay = ({ title, stack, link, github, description }) => {
             <GitHubIcon
               sx={{ width: "40px", height: "40px", marginRight: "5px" }}
             />
-            <Typography variant="body">Github Code</Typography>
+            <Typography variant="body" sx={{ color: "#7dd3fc" }}>
+              GitHub Code
+            </Typography>
           </button>
         </a>
         <a href={link} target="_blank" rel="noreferrer">
@@ -35,7 +37,9 @@ const Overlay = ({ title, stack, link, github, description }) => {
             <LanguageIcon
               sx={{ width: "40px", height: "40px", marginRight: "5px" }}
             />
-            <Typography variant="body">Live Website</Typography>
+            <Typography variant="body" sx={{ color: "#7dd3fc" }}>
+              Live Website
+            </Typography>
           </button>
         </a>
       </div>

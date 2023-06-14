@@ -3,7 +3,7 @@ import { createTheme } from "@mui/material";
 const theme = createTheme({
   typography: {
     navbarTitle: {
-      fontSize: "72px",
+      fontSize: "68px",
       fontFamily: "Righteous",
       background: "transparent",
     },

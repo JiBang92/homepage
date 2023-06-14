@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <div className="p-[25px] bg-[transparent]">
-        <div className="flex flex-col justify-center items-center text-[white] h-[250px]">
+        <div className="flex flex-col justify-center items-center text-[white]">
           <Navbar />
         </div>
 

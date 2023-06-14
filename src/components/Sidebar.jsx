@@ -11,10 +11,10 @@ const Sidebar = () => {
           key={tech.name}
           scale={scale}
           transitionSpeed={2500}
-          className="flex justify-center items-center bg-transparentWhite rounded-3xl z-[999] w-[75%] h-auto my-[35px]"
+          className="flex justify-center items-center bg-transparentWhite rounded-3xl z-[999] w-[75%] my-[20px]"
         >
           <img
-            className="rounded-3xl bg-transparentWhite p-[25px]"
+            className="rounded-3xl bg-transparentWhite p-[20px]"
             src={tech.icon}
             alt={tech.name}
             width="100%"
